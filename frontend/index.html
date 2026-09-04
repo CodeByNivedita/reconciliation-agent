@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reconciliation — Ledger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <span class="mark">Ledger</span>
+    <span class="sub">Revenue recovery intelligence agent</span>
+  </div>
+  <div class="tabs">
+    <div class="tab active" data-view="queue">Queue</div>
+    <div class="tab" data-view="benchmark">Benchmark</div>
+  </div>
+</header>
+
+<div class="context-strip" id="context-strip">Loading…</div>
+
+<main id="queue-view">
+  <div class="queue-toolbar">
+    <div class="filter-group" id="action-filters"></div>
+  </div>
+  <div class="queue-list" id="queue-list"></div>
+</main>
+
+<main id="detail-view" class="hidden" style="display:grid; grid-template-columns:1.15fr 0.85fr; gap:20px; max-width:1080px; margin:0 auto; padding:28px 32px 60px;">
+  <div class="card" id="left"></div>
+  <div class="card" id="trace"></div>
+</main>
+
+<main id="benchmark-view" class="hidden">
+  <div class="card" id="benchmark-content"></div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
